@@ -4,10 +4,10 @@
 
 ### What is HTML?
 
-HTML (HyperText Markup Language) is the standard markup language used to
-create and structure web pages on the internet.
+- HTML (HyperText Markup Language) is the standard markup language used to
+  create and structure web pages on the internet.
 
-It is the basic building block of every website.
+- It is the basic building block of every website.
 
 ------------------------------------------------------------------------
 
@@ -37,8 +37,11 @@ HTML5.
 
 ### HTML Comments
 
-Comments are used to write notes inside the code. They are not visible
-in the browser.
+- Comments are used to write notes inside the code. They are not visible
+  in the browser.
+
+- In HTML, we can comment out a line by pressing `Ctrl + /`.
+
 
 ``` html
 <!-- Write your comments here -->
@@ -48,8 +51,10 @@ in the browser.
 
 ### HTML Style Attribute
 
-The `style` attribute is used to add styling such as color, font size,
-and alignment to HTML elements.
+- The `style` attribute is used to add styling such as color, font size,
+  and alignment to HTML elements.
+- An HTML attribute provides additional information or properties about an HTML element. 
+  Attributes are usually specified in the opening tag.
 
 Example:
 
@@ -119,12 +124,12 @@ HTML provides six heading levels:
 
 ### 2. Paragraph Tag
 
+Used to define paragraphs. It automatically adds spacing before and
+after the text.
+
 ``` html
 <p></p>
 ```
-
-Used to define paragraphs. It automatically adds spacing before and
-after the text.
 
 ------------------------------------------------------------------------
 
@@ -139,6 +144,7 @@ Used to create hyperlinks.
 Important attribute:
 
 -   `href` -- Specifies the destination URL.
+-   `href` -- Hypertext Reference.
 
 Example:
 
@@ -159,6 +165,7 @@ Used to display images. It is an empty tag.
 Important attributes:
 
 -   `src` -- Image path
+-   `src` -- Source
 -   `alt` -- Alternative text
 
 Example:
@@ -171,32 +178,34 @@ Example:
 
 ### 5. Line Break Tag
 
+Moves content to the next line without starting a new paragraph.
+
+-  `br` -- Line Break.
+
 ``` html
 <br>
 ```
-
-Moves content to the next line without starting a new paragraph.
 
 ------------------------------------------------------------------------
 
 ### 6. Horizontal Rule Tag
 
+Creates a horizontal line to separate sections of content.
+
 ``` html
 <hr>
 ```
-
-Creates a horizontal line to separate sections of content.
 
 ------------------------------------------------------------------------
 
 ### 7. Center Tag
 
+Used to center content.\
+Note: This tag is deprecated in modern HTML. CSS should be used instead.
+
 ``` html
 <center></center>
 ```
-
-Used to center content.\
-Note: This tag is deprecated in modern HTML. CSS should be used instead.
 
 ------------------------------------------------------------------------
 
@@ -254,12 +263,12 @@ Table elements:
 
 ### 10. Div Tag
 
+Used as a container to group other HTML elements. It is commonly used
+for layout design.
+
 ``` html
 <div></div>
 ```
-
-Used as a container to group other HTML elements. It is commonly used
-for layout design.
 
 ------------------------------------------------------------------------
 
@@ -289,10 +298,9 @@ Used to collect user input.
 
 Common form elements:
 
--   `<input>`
--   `<textarea>`
--   `<select>`
--   `<button>`
+-   `<input>`    -> Used to get user input such as name, email, password, number, etc
+-   `<textarea>` -> Used to enter long or multiple lines of text, such as comments or messages.
+-   `<button>`   -> Used to create a clickable button, such as Submit or Reset.
 
 Example:
 
@@ -307,6 +315,8 @@ Example:
 
 ### 13. Select Tag (Dropdown)
 
+Used to create a drop-down list from which the user can select an option.
+
 ``` html
 <select>
   <option>Option 1</option>
@@ -317,6 +327,92 @@ Example:
 Used to create a dropdown list.
 
 ------------------------------------------------------------------------
+
+### 14. Description List
+
+An HTML Description List is used to display a list of terms along with their descriptions or definitions.
+
+```html
+<dl>
+    <dt>Term/Name</dt>
+    <dd>Description/Definition for the term/name</dd>
+</dl>
+```
+
+- <dl> → Defines the Description List\
+- <dt> → Defines the term/name\
+- <dd> → Defines the description of the term
+
+------------------------------------------------------------------------
+
+### 15. Span Tag:
+
+Used to group or style a small part of inline text or content.
+
+```html
+<p>My name is <span style="color: red;">Mohamed Asraf</span>.</p>
+```
+
+-------------------------------------------------------------------------
+
+### 16. Header Tag:
+
+Defines the header section of a webpage or section. It can contain a logo, title, navigation, etc.
+
+```html
+<header>
+    <h1>My Website</h1>
+</header>
+```
+
+--------------------------------------------------------------------------
+
+### 17. Footer Tag:
+
+Defines the footer section of a webpage or section. It often contains copyright, contact, or related information.
+
+```html
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+```
+
+----------------------------------------------------------------------------
+
+### 18. Audio Tag:
+
+Used to embed audio content in a webpage.
+
+```html
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+```
+
+----------------------------------------------------------------------------
+
+### 19. Video Tag:
+
+Used to embed video content in a webpage.
+
+```html
+<video controls width="400">
+    <source src="video.mp4" type="video/mp4">
+</video>
+```
+
+--------------------------------------------------------------------------
+
+### 20. Iframe Tag:
+
+iframe is used to display a web page within a web page.
+
+```html
+<iframe src="url" title="description"></iframe>
+```
+
+--------------------------------------------------------------------------
+
 
 ## 5️⃣ HTML Formatting Elements
 
